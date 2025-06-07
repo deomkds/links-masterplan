@@ -10,8 +10,8 @@
         /* Define a fonte Inter globalmente para o corpo do documento */
         body {
             font-family: "Inter", sans-serif;
-            /* Cor de fundo atualizada conforme solicitado */
-            background-color: #5f7175; /* Um tom de cinza-esverdeado profissional */
+            /* Cor de fundo revertida para #5f7175 */
+            background-color: #5f7175;
         }
         /* Estilização para o elemento foco (quando um link é selecionado) */
         a:focus {
@@ -26,15 +26,13 @@
         <!-- Seção de perfil da empresa -->
         <div class="mb-8">
             <!-- Imagem do logotipo da empresa ou foto de perfil -->
-            <!-- Placeholder para imagem: 120x120 pixels, fundo azul-marinho, texto branco "Logo" -->
+            <!-- Alterado para w-full para ter a mesma largura do cartão e h-40 para manter um tamanho definido -->
             <img 
-                src="https://placehold.co/120x120/1a202c/FFFFFF?text=Logo" 
+                src="./images/logo.png" 
                 alt="Logotipo MasterPlan Imóveis" 
-                class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-300 shadow-lg"
-                onerror="this.onerror=null;this.src='https://placehold.co/120x120/cccccc/000000?text=Erro';"
+                class="w-full h-40 mx-auto mb-4 object-contain" 
+                onerror="this.onerror=null;this.src='https://placehold.co/160x160/cccccc/000000?text=Erro';"
             >
-            <!-- Nome da empresa -->
-            <h1 class="text-3xl font-extrabold text-gray-800 mb-2">MasterPlan Imóveis</h1>
             <!-- Slogan ou descrição da empresa -->
             <p class="text-gray-600 text-lg">Seu próximo imóvel começa aqui. Realizando sonhos com excelência.</p>
         </div>
