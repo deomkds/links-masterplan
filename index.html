@@ -18,6 +18,7 @@
             outline: none; /* Remove o contorno padrão */
             box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Adiciona um brilho azul suave para acessibilidade */
         }
+        /* Não é mais necessário esconder o texto por padrão, pois a imagem não o substitui */
     </style>
 </head>
 <body class="min-h-screen flex items-center justify-center p-4">
@@ -28,79 +29,112 @@
             <!-- Imagem do logotipo da empresa ou foto de perfil -->
             <!-- Alterado para w-full para ter a mesma largura do cartão e h-40 para manter um tamanho definido -->
             <img 
-                src="./images/logo.png" 
+                src="./images/logo.svg" 
                 alt="Logotipo MasterPlan Imóveis" 
                 class="w-full h-40 mx-auto mb-4 object-contain" 
                 onerror="this.onerror=null;this.src='https://placehold.co/160x160/cccccc/000000?text=Erro';"
             >
-            <!-- Nome da empresa -->
-            <h1 class="text-3xl font-extrabold text-gray-800 mb-2">MasterPlan Imóveis</h1>
             <!-- Slogan ou descrição da empresa -->
             <p class="text-gray-600 text-lg">Seu próximo imóvel começa aqui. Realizando sonhos com excelência.</p>
         </div>
 
         <!-- Seção de links da empresa -->
-        <div class="space-y-4 mb-8">
-            <!-- Link 1: Website Oficial -->
+        <div class="space-y-6 mb-8">
+            <!-- Link 1: Website Oficial - Degradê Azul -->
             <a 
                 href="https://masterplanresende.com.br" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="block w-full bg-blue-700 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-blue-800 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102"
+                class="block w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-blue-500 hover:to-blue-700 hover:shadow-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
             >
-                Acesse nosso site
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/website.svg" alt="Acesse nosso site" class="h-8 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Acesse nosso site</span>
             </a>
-            <!-- Link 2: Buscar Imóveis -->
+            <!-- Link 2: Buscar Imóveis - Degradê Teal -->
             <a 
                 href="https://masterplanresende.com.br/busca" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="block w-full bg-teal-600 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-teal-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102"
+                class="block w-full bg-gradient-to-r from-teal-500 to-teal-700 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-teal-400 hover:to-teal-600 hover:shadow-teal-800 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
             >
-                Busque um imóvel
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/busca.svg" alt="Busque um imóvel" class="h-8 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Busque um imóvel</span>
             </a>
-            <!-- Link 3: Fale Conosco no WhatsApp -->
+            <!-- Link 3: Fale Conosco no WhatsApp - Degradê Verde -->
             <a 
                 href="https://api.whatsapp.com/send?phone=5524992661518&text=Ol%C3%A1%2C%20estou%20visitando%20o%20site%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="block w-full bg-green-600 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102"
+                class="block w-full bg-gradient-to-r from-green-500 to-green-700 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-green-400 hover:to-green-600 hover:shadow-green-800 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
             >
-                Fale com a gente no WhatsApp
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/whatsapp.svg" alt="Fale com a gente no WhatsApp" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Fale com a gente no WhatsApp</span>
             </a>
-            <!-- Link 4: Instagram -->
+            <!-- Link 4: Instagram - Degradê Rosa/Roxo -->
             <a 
                 href="https://www.instagram.com/masterplan.resende/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="block w-full bg-pink-600 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-pink-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102"
+                class="block w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-pink-400 hover:to-purple-500 hover:shadow-purple-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
             >
-                Siga-nos no Instagram
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/instagram.svg" alt="Siga-nos no Instagram" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Siga-nos no Instagram</span>
             </a>
-            <!-- Link 5: Facebook -->
+            <!-- Link 5: Facebook - Degradê Azul Escuro -->
             <a 
                 href="https://www.facebook.com/people/Master-Plan-Resende/61568457718067/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="block w-full bg-blue-800 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102"
+                class="block w-full bg-gradient-to-r from-blue-700 to-blue-900 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-blue-600 hover:to-blue-800 hover:shadow-blue-950 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
             >
-                Siga-nos no Facebook
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/facebook.svg" alt="Siga-nos no Facebook" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Siga-nos no Facebook</span>
             </a>
-            <!-- Link 6: Canal no YouTube (Cor alterada para vermelho) -->
+            <!-- Link 6: Canal no YouTube - Degradê Vermelho -->
             <a 
                 href="https://www.youtube.com/@masterplanresende" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="block w-full bg-red-600 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-red-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102"
+                class="block w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-red-500 hover:to-red-700 hover:shadow-red-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
             >
-                Veja nosso canal no YouTube
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/youtube.svg" alt="Veja nosso canal no YouTube" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Veja nosso canal no YouTube</span>
             </a>
-            <!-- Link 7: Nosso Endereço / Contato -->
+            <!-- Link 7: Nosso Endereço / Contato - Degradê Cinza -->
             <a 
                 href="mailto:contato@masterplanresende.com.br" 
-                class="block w-full bg-gray-700 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-md hover:bg-gray-800 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102"
+                target="_blank"
+                rel="noopener noreferrer" 
+                class="block w-full bg-gradient-to-r from-gray-600 to-gray-800 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-gray-500 hover:to-gray-700 hover:shadow-gray-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
             >
-                Mande-nos um e-mail
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/email.svg" alt="Mande-nos um e-mail" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Mande-nos um e-mail</span>
+            </a>
+            <!-- Link 8: LinkedIn - Degradê Azul Profundo -->
+            <a 
+                href="https://www.linkedin.com/company/masterplan-imóveis-ltda/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full bg-gradient-to-r from-blue-900 to-blue-950 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-blue-800 hover:to-blue-900 hover:shadow-blue-950 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+            >
+                <div class="w-12 flex items-center justify-center flex-shrink-0">
+                    <img src="./images/linkedin.svg" alt="Conecte-se no LinkedIn" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
+                </div>
+                <span class="flex-grow text-center">Conecte-se no LinkedIn</span>
             </a>
         </div>
 
@@ -127,5 +161,13 @@
             <p>&copy; 2025 MasterPlan Imóveis. Todos os direitos reservados.</p>
         </div>
     </div>
+
+    <script>
+        // Função para lidar com erros de carregamento de imagem
+        function handleImageError(imgElement) {
+            imgElement.style.display = 'none'; // Esconde a imagem quebrada
+            // O texto do span já está visível por padrão, então não precisamos alterá-lo aqui
+        }
+    </script>
 </body>
 </html>
