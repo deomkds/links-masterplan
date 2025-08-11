@@ -31,7 +31,7 @@
     >
 
     <!-- Contêiner principal para centralizar e limitar a largura do conteúdo -->
-    <div class="bg-white/80 p-8 rounded-xl shadow-2xl max-w-md w-full text-center transform transition-all duration-300 hover:scale-105 backdrop-blur-xl">
+    <div class="bg-gray-300/80 p-8 rounded-xl shadow-2xl max-w-md w-full text-center backdrop-blur-xl">
         <!-- Seção de perfil da empresa -->
         <div class="mb-8">
             <!-- Imagem do logotipo da empresa ou foto de perfil -->
@@ -39,115 +39,123 @@
             <img
                 src="./images/logo.png"
                 alt="Logotipo MasterPlan Imóveis"
-                class="w-full h-40 mx-auto mb-4 object-contain"
+                class="w-full h-40 mx-auto mb-4 object-contain drop-shadow-xl"
                 onerror="this.onerror=null;this.src='https://placehold.co/160x160/cccccc/000000?text=Erro';"
             >
             <!-- Slogan ou descrição da empresa -->
-            <p class="text-gray-600 text-lg">Seu próximo imóvel começa aqui. Realizando sonhos com excelência.</p>
+            <p class="text-gray-800 text-lg font-bold drop-shadow">Seu próximo imóvel começa aqui.</p>
         </div>
 
         <!-- Seção de links da empresa -->
-        <div class="space-y-6 mb-8">
-            <!-- Link 1: Website Oficial - Degradê Azul -->
-            <a
-                href="https://masterplanresende.com.br"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-blue-500 hover:to-blue-700 hover:shadow-blue-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+        <div class="space-y-3 mb-8">
+            <!-- Botão 1: Website Oficial -->
+            <a 
+                href="https://masterplanresende.com.br" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/website.svg" alt="Acesse nosso site" class="h-8 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Acesse nosso site</span>
+                <img 
+                    src="./images/website.png" 
+                    alt="Acesse nosso site" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
-            <!-- Link 2: Buscar Imóveis - Degradê Teal -->
-            <a
-                href="https://masterplanresende.com.br/busca"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-teal-500 to-teal-700 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-teal-400 hover:to-teal-600 hover:shadow-teal-800 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+            <!-- Botão 2: Buscar Imóveis -->
+            <a 
+                href="https://masterplanresende.com.br/busca" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/busca.svg" alt="Busque um imóvel" class="h-8 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Busque um imóvel</span>
+                <img 
+                    src="./images/busca.png" 
+                    alt="Busque um imóvel" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
-            <!-- Link 3: Fale Conosco no WhatsApp - Degradê Verde -->
-            <a
-                href="https://api.whatsapp.com/send?phone=5524992661518&text=Ol%C3%A1%2C%20estou%20visitando%20o%20site%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-green-500 to-green-700 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-green-400 hover:to-green-600 hover:shadow-green-800 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+            <!-- Botão 3: Fale Conosco no WhatsApp -->
+            <a 
+                href="https://api.whatsapp.com/send?phone=5524992661518&text=Ol%C3%A1%2C%20estou%20visitando%20o%20site%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/whatsapp.svg" alt="Fale com a gente no WhatsApp" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Fale com a gente no WhatsApp</span>
+                <img 
+                    src="./images/whatsapp.png" 
+                    alt="Fale com a gente no WhatsApp" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
-            <!-- Link 4: Instagram - Degradê Rosa/Roxo -->
-            <a
-                href="https://www.instagram.com/masterplan.resende/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-pink-400 hover:to-purple-500 hover:shadow-purple-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+            <!-- Botão 4: Instagram -->
+            <a 
+                href="https://www.instagram.com/masterplan.resende/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/instagram.svg" alt="Siga-nos no Instagram" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Siga-nos no Instagram</span>
+                <img 
+                    src="./images/instagram.png" 
+                    alt="Siga-nos no Instagram" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
-            <!-- Link 5: Facebook - Degradê Azul Escuro -->
-            <a
-                href="https://www.facebook.com/people/Master-Plan-Resende/61568457718067/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-blue-700 to-blue-900 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-blue-600 hover:to-blue-800 hover:shadow-blue-950 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+            <!-- Botão 5: Facebook -->
+            <a 
+                href="https://www.facebook.com/people/Master-Plan-Resende/61568457718067/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/facebook.svg" alt="Siga-nos no Facebook" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Siga-nos no Facebook</span>
+                <img 
+                    src="./images/facebook.png" 
+                    alt="Siga-nos no Facebook" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
-            <!-- Link 6: Canal no YouTube - Degradê Vermelho -->
-            <a
-                href="https://www.youtube.com/@masterplanresende"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-red-500 hover:to-red-700 hover:shadow-red-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+            <!-- Botão 6: Canal no YouTube -->
+            <a 
+                href="https://www.youtube.com/@masterplanresende" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/youtube.svg" alt="Veja nosso canal no YouTube" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Veja nosso canal no YouTube</span>
+                <img 
+                    src="./images/youtube.png" 
+                    alt="Veja nosso canal no YouTube" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
-            <!-- Link 7: Nosso Endereço / Contato - Degradê Cinza -->
-            <a
-                href="mailto:contato@masterplanresende.com.br"
+            <!-- Botão 7: Mande-nos um e-mail -->
+            <a 
+                href="mailto:contato@masterplanresende.com.br" 
                 target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-gray-600 to-gray-800 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-gray-500 hover:to-gray-700 hover:shadow-gray-900 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/email.svg" alt="Mande-nos um e-mail" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Mande-nos um e-mail</span>
+                <img 
+                    src="./images/email.png" 
+                    alt="Mande-nos um e-mail" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
-            <!-- Link 8: LinkedIn - Degradê Azul Profundo -->
-            <a
-                href="https://www.linkedin.com/company/masterplan-imóveis-ltda/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full bg-gradient-to-r from-blue-900 to-blue-950 text-white py-4 px-6 rounded-lg text-lg font-semibold shadow-xl hover:from-blue-800 hover:to-blue-900 hover:shadow-blue-950 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-102 flex items-center"
+            <!-- Botão 8: LinkedIn -->
+            <a 
+                href="https://www.linkedin.com/company/masterplan-imóveis-ltda/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="block w-full transform transition-all duration-300 hover:scale-105"
             >
-                <div class="w-12 flex items-center justify-center flex-shrink-0">
-                    <img src="./images/linkedin.svg" alt="Conecte-se no LinkedIn" class="h-8 mr-2 object-contain" onerror="handleImageError(this)">
-                </div>
-                <span class="flex-grow text-center">Conecte-se no LinkedIn</span>
+                <img 
+                    src="./images/linkedin.png" 
+                    alt="Conecte-se no LinkedIn" 
+                    class="w-full rounded-lg drop-shadow-xl"
+                >
             </a>
         </div>
 
         <!-- Seção do Mapa -->
-        <div class="mt-8 pt-8 border-t border-gray-200">
+        <div class="mt-8 pt-8 border-t border-gray-700">
             <h2 class="text-2xl font-bold text-gray-800 mb-4">Onde Estamos</h2>
             <div class="relative" style="padding-bottom: 75%;"> <!-- Proporção 4:3 para responsividade -->
                 <iframe
@@ -161,17 +169,17 @@
                     class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
                 ></iframe>
             </div>
-            <p class="text-gray-600 text-sm mt-4">Visite-nos em nosso endereço: Avenida Luiz Dias Martins, 37, Alphapark, Parque Ipiranga, Resende - RJ, 27511-970. Use o mapa para traçar sua rota!</p>
+            <p class="text-gray-800 text-sm mt-4">Visite-nos em nosso endereço: Avenida Luiz Dias Martins, 37, Alphapark, Parque Ipiranga, Resende - RJ, 27511-970. Use o mapa para traçar sua rota!</p>
         </div>
 
         <!-- Rodapé da empresa -->
-        <div class="mt-8 text-gray-500 text-sm">
+        <div class="mt-8 text-gray-400 text-sm">
             <p>&copy; 2025 MasterPlan Imóveis. Todos os direitos reservados.</p>
         </div>
     </div>
 
     <script>
-        // Função para lidar com erros de carregamento de imagem
+        // Função para lidar com erros de carregamento de imagem (não mais necessária para os botões, mas mantida por precaução)
         function handleImageError(imgElement) {
             imgElement.style.display = 'none'; // Esconde a imagem quebrada
             // O texto do span já está visível por padrão, então não precisamos alterá-lo aqui
