@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,176 +14,104 @@
             /* Cor de fundo padrão (fallback) */
             background-color: #5f7175;
         }
+
         /* Estilização para o elemento foco (quando um link é selecionado) */
         a:focus {
-            outline: none; /* Remove o contorno padrão */
-            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Adiciona um brilho azul suave para acessibilidade */
+            outline: none;
+            /* Remove o contorno padrão */
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+            /* Adiciona um brilho azul suave para acessibilidade */
         }
     </style>
 </head>
+
 <body class="min-h-screen flex items-center justify-center p-4">
     <!-- Imagem de fundo com desfoque condicional. O blur-xl é aplicado por padrão.
          Se a imagem falhar, ela é escondida, revelando o background-color do body. -->
-    <img
-        src="./images/fundo.webp"
-        alt="Imagem de Fundo"
-        class="fixed inset-0 w-full h-full object-cover -z-10 blur-md"
-        onerror="this.style.display='none'; this.classList.remove('blur-md');"
-    >
+    <img src="./images/fundo.webp" alt="Imagem de Fundo" class="fixed inset-0 w-full h-full object-cover -z-10 blur-md"
+        onerror="this.style.display='none'; this.classList.remove('blur-md');">
 
-    <div class="bg-gray-100/90 pt-8 pb-8 pl-4 pr-4 rounded-xl shadow-2xl max-w-md w-full text-center backdrop-blur-xl">
+    <div class="bg-blue-50/90 pt-8 pb-8 pl-4 pr-4 rounded-xl shadow-2xl max-w-md w-full text-center backdrop-blur-xl">
         <!-- Seção de perfil da empresa -->
         <div class="mb-8">
             <!-- Imagem do logotipo da empresa ou foto de perfil -->
-            <img
-                src="./images/logo.png"
-                alt="Logotipo MasterPlan Imóveis"
+            <img src="./images/logo.png" alt="Logotipo MasterPlan Imóveis"
                 class="w-full h-40 mx-auto mb-4 object-contain drop-shadow-xl"
-                onerror="this.onerror=null;this.src='https://placehold.co/160x160/cccccc/000000?text=MasterPlan';"
-            >
-            <div class="mt-8 pt-8 border-t border-gray-400">
+                onerror="this.onerror=null;this.src='https://placehold.co/160x160/cccccc/000000?text=MasterPlan';">
+            <div class="mt-8 pt-8 border-t border-[#061c41]">
                 <!-- Slogan ou descrição da empresa -->
-                <p class="text-gray-600 text-xl font-bold">O imóvel dos seus sonhos está aqui.</p>
+                <p class="text-blue-950 text-xl font-bold">O imóvel dos seus sonhos está aqui.</p>
             </div>
         </div>
 
         <!-- Seção de links da empresa -->
-        <div class="space-y-2 mb-8 mt-8 pt-8 border-t border-gray-400">
+        <div class="space-y-2 mb-8 mt-8 pt-8 border-t border-[#061c41]">
             <!-- Botão Especial: Lançamento -->
-            <a 
-                href="https://api.whatsapp.com/send?phone=5524992661518&text=Ol%C3%A1%21%20Quero%20reservar%20o%20meu%20terreno%20no%20Valle%20da%20Limeira%21" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/valledalimeira.webp"
-                    alt="Saiba mais sobre o Valle da Limeira!" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://api.whatsapp.com/send?phone=5524992661518&text=Ol%C3%A1%21%20Quero%20reservar%20o%20meu%20terreno%20no%20Valle%20da%20Limeira%21"
+                target="_blank" rel="noopener noreferrer"
+                class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/valledalimeira.webp" alt="Saiba mais sobre o Valle da Limeira!"
+                    class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 1: Website Oficial -->
-            <a 
-                href="https://brunoferreiraimoveis.com.br" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/website.webp"
-                    alt="Acesse nosso site" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://brunoferreiraimoveis.com.br" target="_blank" rel="noopener noreferrer"
+                class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/website.webp" alt="Acesse nosso site" class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 2: Buscar Imóveis -->
-            <a 
-                href="https://brunoferreiraimoveis.com.br/busca" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/busca.webp"
-                    alt="Busque um imóvel" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://brunoferreiraimoveis.com.br/busca" target="_blank" rel="noopener noreferrer"
+                class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/busca.webp" alt="Busque um imóvel" class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 3: Fale Conosco no WhatsApp -->
-            <a 
-                href="https://api.whatsapp.com/send?phone=5524992661518&text=Ol%C3%A1%2C%20estou%20visitando%20o%20site%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/whatsapp.webp"
-                    alt="Fale com a gente no WhatsApp" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://api.whatsapp.com/send?phone=5524992661518&text=Ol%C3%A1%2C%20estou%20visitando%20o%20site%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es"
+                target="_blank" rel="noopener noreferrer"
+                class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/whatsapp.webp" alt="Fale com a gente no WhatsApp"
+                    class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 4: Instagram -->
-            <a 
-                href="https://www.instagram.com/masterplan.resende/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/instagram.webp"
-                    alt="Siga-nos no Instagram" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://www.instagram.com/masterplan.resende/" target="_blank" rel="noopener noreferrer"
+                class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/instagram.webp" alt="Siga-nos no Instagram"
+                    class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 5: Facebook -->
-            <a 
-                href="https://www.facebook.com/people/Master-Plan-Resende/61568457718067/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/facebook.webp"
-                    alt="Siga-nos no Facebook" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://www.facebook.com/people/Master-Plan-Resende/61568457718067/" target="_blank"
+                rel="noopener noreferrer" class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/facebook.webp" alt="Siga-nos no Facebook" class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 6: Canal no YouTube -->
-            <a 
-                href="https://www.youtube.com/@bruno.imoveis" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/youtube.webp"
-                    alt="Veja nosso canal no YouTube" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://www.youtube.com/@bruno.imoveis" target="_blank" rel="noopener noreferrer"
+                class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/youtube.webp" alt="Veja nosso canal no YouTube"
+                    class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 7: Mande-nos um e-mail -->
-            <a 
-                href="mailto:contato@brunoferreiraimoveis.com.br" 
-                target="_blank"
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/email.webp"
-                    alt="Mande-nos um e-mail" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="mailto:contato@brunoferreiraimoveis.com.br" target="_blank" rel="noopener noreferrer"
+                class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/email.webp" alt="Mande-nos um e-mail" class="w-full rounded-lg drop-shadow-2xl">
             </a>
             <!-- Botão 8: LinkedIn -->
-            <a 
-                href="https://www.linkedin.com/company/masterplan-imóveis-ltda/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="block w-full transform transition-all duration-300 hover:scale-110"
-            >
-                <img 
-                    src="./images/linkedin.webp"
-                    alt="Conecte-se no LinkedIn" 
-                    class="w-full rounded-lg drop-shadow-2xl"
-                >
+            <a href="https://www.linkedin.com/company/masterplan-imóveis-ltda/" target="_blank"
+                rel="noopener noreferrer" class="block w-full transform transition-all duration-300 hover:scale-110">
+                <img src="./images/linkedin.webp" alt="Conecte-se no LinkedIn"
+                    class="w-full rounded-lg drop-shadow-2xl">
             </a>
         </div>
 
         <!-- Seção do Mapa -->
-        <div class="mt-8 pt-8 border-t border-gray-400">
+        <div class="mt-8 pt-8 border-t border-[#061c41]">
             <h2 class="text-2xl font-bold text-gray-600 mb-8 font-bold">Onde Estamos</h2>
             <div class="relative shadow-2xl" style="padding-bottom: 75%;"> <!-- Proporção 4:3 para responsividade -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.7170990520217!2d-44.46802588059065!3d-22.482140984436825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9e7ed708d3ffff%3A0xba333ab4dae6db73!2sMasterPlan%20Im%C3%B3veis!5e0!3m2!1sen!2sus!4v1749334987218!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
-                    class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-                ></iframe>
+                    class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"></iframe>
             </div>
-            <p class="text-gray-800 text-sm mt-8">Nosso endereço: Avenida Luiz Dias Martins, 37, Alphapark, Parque Ipiranga, Resende - RJ, 27511-970.</p>
+            <p class="text-gray-800 text-sm mt-8">Nosso endereço: Avenida Luiz Dias Martins, 37, Alphapark, Parque
+                Ipiranga, Resende - RJ, 27511-970.</p>
         </div>
 
         <!-- Rodapé da empresa -->
@@ -199,4 +128,5 @@
         }
     </script>
 </body>
+
 </html>
